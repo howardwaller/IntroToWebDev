@@ -6,29 +6,48 @@ Most recent revision: 1
 -->
 <html lang="en">
 <head>
-<title>Howard's portfolio</title>
+	<title>Howard's portfolio</title>
+	<style>
+	body {
+    background-color: lightblue;
+	}
+	header, footer {
+    background-color: indianred;
+    color: white;
+	}
+	.border {
+    border: thick solid blue;
+	}
+	#experience {
+    border: thick dashed orange;
+	}
+	
+	
+	
+	
+	</style>
 </head>
 <body>
 <header>
 <h1>Portfolio for Howard Waller</h1>
 </header>
-<nav> <!-- The nav element will include navigation buttons or links -->
-	<hr>
+<nav class="border"> <!-- The nav element will include navigation buttons or links -->
+	<hr style="border: thin dotted red;">
 	<p>Links to our pages will go here</p>
     <p><a href="projects.html">Projects</a></p>
     <p><a href="contact.html">Contact Me</a></p>
     <p><a href="testimonials.html">Testimonials</a></p>
-    <hr>
+    <hr style="width: 75%; border: 2px dashed darkgreen;">
 </nav>
 <!-- We need to add links to projects.html, contact.html, and testimonials.html -->
 <section>
-<article id="about-me">
+<article class="border" id="about">
 <h2><em>About me</em></h2>
 <img src="images/Howard_NYC.jpg" alt="Portrait of Howard Waller" style="width: 300px;">
 <p>Paragraph 1 about me. Sed nisi est, aliquam non gravida et, euismod id ex. Praesent molestie metus justo, non tristique nisl blandit id. Proin porta nisl eros, vitae laoreet eros vestibulum in. Integer faucibus malesuada purus quis consectetur</p>
 <p>Paragraph 2 about me. Vivamus nec sollicitudin diam, at posuere augue. Nunc pulvinar imperdiet massa ut tincidunt. Pellentesque ac tincidunt metus, nec molestie magna.</p>
 </article>
-<article id="past-experiences"> <!-- This is the second chunk inside the section element. -->
+<article id="experience"> <!-- This is the second chunk inside the section element. -->
 <h2><em>Past experience</em></h2>
 <img src="images/MotorcycleCourier.jpg" alt="Resting courier" style="width: 300px;">
 <table>
@@ -64,7 +83,7 @@ Most recent revision: 1
 	<ol>
 		<li>Thomas Pynchon</li>
 		<li>Don Delillo</li>
-		<li>PJ O'Rourke</li>
+		<li>Bret Easton Ellis</li>
 	</ol>
 	<li>Video Games</li>
 	<ol>
