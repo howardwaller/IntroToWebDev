@@ -7,26 +7,50 @@ Most recent revision: 1
 <html lang="en">
 <head>
 	<title>Howard's portfolio</title>
-	<link href="teststyles.css" rel="stylesheet" type="text/css">
+	<link href="styles/main.css" rel="stylesheet" type="text/css">
 	<style>
-header {
-        background-color: darkgray;
-    }
+	caption {
+    font-weight: bold;
+    font-size: 1.2em;
+	margin-bottom: 8px;
+	}
+	
+	table, th, td {
+    border: 1px solid #0d1f2d;
+	border-collapse: collapse;
+	padding: 5px 10px;
+	}
+	
+	table {
+    width: 90%;
+	margin: auto;
+	}
+	
+	tr {
+    height: 30px;
+	}
+	
+	th {
+    background-color: #546a7b;
+	color: #f2eded;
+	}
+	
+	tr:nth-child(odd) {
+    background-color: #e4c3ad;
+	}
+	
 	</style>
 </head>
 <body>
 <header>
 <h1>Portfolio for Howard Waller</h1>
 </header>
-<nav class="border"> <!-- The nav element will include navigation buttons or links -->
-	<hr style="border: thin dotted red;">
-	<p>Links to our pages will go here</p>
+<nav class="border">
+	<!--Links to our pages will go here -->
     <p><a href="projects.html">Projects</a></p>
     <p><a href="contact.html">Contact Me</a></p>
     <p><a href="testimonials.html">Testimonials</a></p>
-    <hr style="width: 75%; border: 2px solid purple;">
 </nav>
-<!-- We need to add links to projects.html, contact.html, and testimonials.html -->
 <section>
 <article class="border" id="about">
 <h2><em>About me</em></h2>
@@ -39,11 +63,14 @@ header {
 <img src="images/MotorcycleCourier.jpg" alt="Resting courier" style="width: 300px;">
 <table>
 	<caption>Employment History</caption>
+	<thead>
 	<tr>
         <th>Years of Employment</th>
         <th>Title</th>
         <th>Company</th>
     </tr>
+	</thead>
+	<tbody>
 	<tr>
         <td>1994-Present</td>
         <td>Senior Production Editor</td>
@@ -59,7 +86,7 @@ header {
         <td>Production Editor</td>
         <td>Pergamon Press</td>
     </tr>
-
+	</tbody>
 </table>
 </article>
 <article>
@@ -95,8 +122,7 @@ header {
 </ul>
 </article>
 </section>
-<footer style="background-color: fuchsia"> <!-- The footer is a block at the bottom of the page. -->
-<hr>
+<footer> <!-- The footer is a block at the bottom of the page. -->
 <p>&copy; 2023 Howard Waller. All rights reserved.</p>
 </footer>
 </body>
