@@ -1,0 +1,30 @@
+I have a question about images: Sometimes the "<img" tag is closed with ">", sometimes with "/>". What is the difference?
+
+----------------------
+In "CODE-ALONG: Layout and Hyperlinks" I found that the only way to make the page the correct width was to add
+max-width: 900px;
+twice to the <body> tag. Slightly puzzled, as I've typed it correctly both times (It also worked if I copied and pasted into the line below, just to make sure I wasn't typing it incorrectly in one line). My body tag looks like this:
+
+body {
+    background-color: #fef9ff;
+    font-family: arial, helvetica, sans-serif;
+    color: #0d1f2d
+	max-width: 900px;
+	max-width: 900px;
+    margin: 0 auto;
+}
+
+-----------------------
+Hi, another query: I have hit a similar snag to Margaret Z above. When I place the following code within <style> tags in the index page (and have addded <div style="clear-float"></div> to the end of each "article"). Or, if I add it to the css file
+
+.clear-float {
+clear:both;
+}
+	
+article img {
+float:left;
+}
+
+I get a page where the images float, but the float isn't cleared (the example shows them floating but also with the next image correctly formatted on a new line). Is there something I might be missing?
+
+Thanks

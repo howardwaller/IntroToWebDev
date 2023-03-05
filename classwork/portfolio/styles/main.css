@@ -8,7 +8,11 @@ body {
     background-color: #fef9ff;
     font-family: arial, helvetica, sans-serif;
     color: #0d1f2d
+	max-width: 900px;
+	max-width: 900px;
+    margin: 0 auto;
 }
+
 header, footer {
     background-color: #5b7d87;
     color: #fef9ff;
@@ -56,7 +60,7 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #f2eded;
     color: #546a7b;
-}
+} 
 textarea {
     width: 100%;
     height: 200px;
@@ -67,5 +71,18 @@ textarea {
     border-radius: 3px;
     background-color: #fff;
     resize: none;
-}
+} 
+	.clear-float {
+    clear:both;
+	}
+	
+	article img {
+	float:left;
+	}
+	
 
+
+	.right-content {
+    float:left;
+	}
+	
