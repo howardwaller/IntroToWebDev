@@ -1,9 +1,8 @@
 /*
 Creator: Howard Waller
 Date created: 09-Mar-23
-Most recent revision: 19-Mar-23
+Most recent revision: 21-Mar-23
 */
-
 body {
     background-color: #f2d9d9;
     font-family: arial, helvetica, sans-serif;
@@ -96,6 +95,14 @@ textarea {
 	nav a:hover {
     background-color: #fef9ff;
     color: #5b7d87; 
+	font-style: bold;
+}
+	.jumbotron{
+	background-color: #F08080!important;
+}
+
+tr:nth-child(odd) {
+    background-color: #b3ecff;
 }
 
 
