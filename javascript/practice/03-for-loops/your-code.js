@@ -22,7 +22,9 @@ for (var n = 1; n <= 7; n++) {
 console.log("FOR ONE TO TEN");
 // Write your code here:
 
-
+for (var n = 1; n <= 10; n++) {
+    console.log(n);
+}
 
 // 2. COUNT BY TWOS FROM TWO TO TWELVE
 // ===================================
@@ -39,7 +41,6 @@ console.log("FOR ONE TO TEN");
 // 12
 console.log("COUNT BY TWOS FROM TWO TO TWELVE");
 // Write your code here:
-
 
 
 // 3. COUNT BACKWARD FROM SIX
@@ -59,7 +60,9 @@ console.log("COUNT BY TWOS FROM TWO TO TWELVE");
 console.log("COUNT BACKWARD FROM SIX");
 // Write your code here:
 
-
+for (var n = 6; n >= 0; n--) {
+    console.log(n);
+}
 
 // 4. SUM EVENS
 // ============
@@ -78,6 +81,11 @@ var sum = 0;    // We add even numbers to this variable.
 console.log("SUM EVENS");
 // Write your code here:
 
+var limit = 11
+for (var sum = 0; sum <= limit; sum++) {
+    console.log(sum);
+}
+
 console.log("limit = %s, sum = %s", limit, sum);
 
 // 5. FIND A FAVORITE NUMBER
@@ -95,7 +103,12 @@ var kaisFavoriteNumber = 44;    // Kai's favorite number
 console.log("FIND A FAVORITE NUMBER");
 // Write your code here:
 
+var winniesFavoriteNumber = 53
+var kaisFavoriteNumber = 62
 
+for (var n = 0; n <= winniesFavoriteNumber || n <= kaisFavoriteNumber; n++) {
+    console.log(n);
+}
 
 // CHALLENGE: WHILE LOOPS
 // ======================
