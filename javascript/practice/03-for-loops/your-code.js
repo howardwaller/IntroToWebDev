@@ -126,10 +126,16 @@ for (var n; n <= winniesFavoriteNumber && n <= kaisFavoriteNumber; n++){
 // ======================
 // Try solving the five tasks above with a while loop in place of a for loop.
 
+console.log("FOR ONE TO SEVEN");
+var n = 1
+while (n <= 7) 
+{console.log(n); n++}
 
-
-
-
+console.log("COUNT BACKWARD FROM SIX");
+// Write your code here:
+var n = 6
+while (n > -1) 
+{console.log(n); n--}
 
 /**********************************
  * The Software Guild
