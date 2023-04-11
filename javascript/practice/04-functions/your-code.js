@@ -58,28 +58,18 @@ console.log("'Olympus Mons' -> expected: O, actual: %s.", getFirstCharacter("Oly
 // the correct result.
 // Write your code here:
 
-var firstNumber = 10;
-var secondNumber = 20;
-var thirdNumber = 30;
 var n = 0;
-var m = 0;
-var p = 0;
+
 function max(firstNumber, secondNumber, thirdNumber) {
     // your code goes here
-	var n = firstNumber - secondNumber;
-	if (n < 0)
+
+	if (firstNumber < secondNumber)
 	{n = secondNumber;}
 	else {n = firstNumber;}
 	
-	var m = secondNumber - thirdNumber;
-	if (m < 0)
-	{m = thirdNumber;}
-	else {m = secondNumber;}
-
-	var p = m - n;
-	if (p < 0)
-	{p = n;}
-	else {p = m;}
+	if (n < thirdNumber)
+	{n = thirdNumber;}
+	else {n = n;}
 	
 	{return n}
 }
