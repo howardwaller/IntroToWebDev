@@ -9,20 +9,37 @@
 // Tip: Start with 2 numbers in the array. Once the function works with 2 numbers, add a third, and so on.
 // Write your code here:
 
+var numbers = [100, 101, 12, 9, 18, 2];
+var MaxNumber = 0;
+function findMax(numbers) {
+	MaxNumber = numbers[0];
+	for (var position = 0; position < numbers.length - 1; position++)
+	{var currentElement = numbers[position];
+    var nextElement = numbers[position + 1];
+	
+	if (MaxNumber > nextElement)
+		MaxNumber = MaxNumber
+	else
+		MaxNumber = nextElement
+}
+{return MaxNumber}
+}
+//MaxNumber = findMax(numbers);
+console.log("The numbers are " + numbers + " and the max no. is " + findMax(numbers));
 
 // Open index.html in your browser, open the JavaScript console, confirm the result.
 
 // Uncomment the code below to verify your function is working.
-// console.log("findMax =====");
-// var numbers = [46, 3, 40, 74, 63];
-// var actual = findMax(numbers);
-// console.log("[46, 3, 40, 74, 63] -> expected: 74, actual: %s", actual);
-// numbers = [3, 3, 3, 3];
-// actual = findMax(numbers);
-// console.log("[3, 3, 3, 3] -> expected: 3, actual: %s", actual);
-// numbers = [-1];
-// actual = findMax(numbers);
-// console.log("[-1] -> expected: -1, actual: %s", actual);
+console.log("findMax =====");
+var numbers = [46, 3, 40, 74, 63];
+var actual = findMax(numbers);
+console.log("[46, 3, 40, 74, 63] -> expected: 74, actual: %s", actual);
+numbers = [3, 3, 3, 3];
+actual = findMax(numbers);
+console.log("[3, 3, 3, 3] -> expected: 3, actual: %s", actual);
+numbers = [-1];
+actual = findMax(numbers);
+console.log("[-1] -> expected: -1, actual: %s", actual);
 
 
 // 2. COMBINE ARRAYS
