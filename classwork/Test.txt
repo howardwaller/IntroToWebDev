@@ -1,0 +1,49 @@
+if (sum % 2 == 0)
+{
+	for (var sum = 0; sum <= limit; sum = sum + 1);}
+else
+{
+	for (var sum = 0; sum <= limit; sum = sum);}
+{
+console.log(sum);}
+
+
+
+
+if (kidsWhoWantToSwim < 0 || kidsWhoWantDoArchery < 0) {
+  // assign totalArchers to 0 and totalSwimmers to 0
+} else if (kidsWhoWantToSwim % 2 === 0) {
+  //values to totalSwimmer & totalArchers from the
+  //kidsWhoWantToSwim and kidsWhoWantDoArchery
+} else {
+  //assign to the totalArchers,  kidsWhoWantToSwim + kidsWhoWantDoArchery
+}
+
+
+for (var n = 0; n <= 55; n++){
+    if (n == winniesFavoriteNumber || n == kaisFavoriteNumber) {
+            console.log(n);
+}
+}
+
+
+var winniesFavoriteNumber = 53; // Winnie's favorite number
+var kaisFavoriteNumber = 44;    // Kai's favorite number
+for (var n = 45; n <= winniesFavoriteNumber && n <= kaisFavoriteNumber; n++){
+    if (n == winniesFavoriteNumber || n == kaisFavoriteNumber) {
+            console.log(n);
+}
+}
+and resulting printed log:
+
+---------------
+
+{
+	for (var n; n <= 1000; n = n + 1)
+if (n <= winniesFavoriteNumber || kaisFavoriteNumber);
+{
+n = n + 1;}
+else
+break;
+{
+console.log(n);}}

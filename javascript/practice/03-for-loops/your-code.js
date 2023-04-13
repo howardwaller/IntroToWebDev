@@ -42,6 +42,12 @@ for (var n = 1; n <= 10; n++) {
 console.log("COUNT BY TWOS FROM TWO TO TWELVE");
 // Write your code here:
 
+<<<<<<< HEAD
+=======
+for (var n = 2; n <= 12; n = n + 2) {
+    console.log(n);
+}
+>>>>>>> 54ec69819f770c84a62b2805a188357f6bfaa2cb
 
 // 3. COUNT BACKWARD FROM SIX
 // ==========================
@@ -60,7 +66,11 @@ console.log("COUNT BY TWOS FROM TWO TO TWELVE");
 console.log("COUNT BACKWARD FROM SIX");
 // Write your code here:
 
+<<<<<<< HEAD
 for (var n = 6; n >= 0; n--) {
+=======
+for (var n = 6; n >= 0; n = n - 1) {
+>>>>>>> 54ec69819f770c84a62b2805a188357f6bfaa2cb
     console.log(n);
 }
 
@@ -68,8 +78,8 @@ for (var n = 6; n >= 0; n--) {
 // ============
 // You're given two variables with numeric values:
 
-var limit = 10; // We stop looping when we reach this number.
-var sum = 0;    // We add even numbers to this variable.
+// var limit = 10; // We stop looping when we reach this number.
+// var sum = 0;    // We add even numbers to this variable.
 
 // Write a for loop that loops from 0 to limit.
 // If the current number is even, add it to sum. Otherwise, ignore it.
@@ -81,12 +91,28 @@ var sum = 0;    // We add even numbers to this variable.
 console.log("SUM EVENS");
 // Write your code here:
 
+<<<<<<< HEAD
 var limit = 11
 for (var sum = 0; sum <= limit; sum++) {
     console.log(sum);
 }
+=======
+var n = 0;
+var sum = 0; 
+var limit = 10;
+>>>>>>> 54ec69819f770c84a62b2805a188357f6bfaa2cb
 
 console.log("limit = %s, sum = %s", limit, sum);
+
+{
+	for (var n; n <= limit; n = n + 1)
+if (n % 2 == 0)
+{
+(sum = sum + n);}
+else
+{(sum = sum);}
+{
+console.log(sum);}}
 
 // 5. FIND A FAVORITE NUMBER
 // =========================
@@ -103,8 +129,18 @@ var kaisFavoriteNumber = 44;    // Kai's favorite number
 console.log("FIND A FAVORITE NUMBER");
 // Write your code here:
 
+<<<<<<< HEAD
 var winniesFavoriteNumber = 53
 var kaisFavoriteNumber = 62
+=======
+console.log("winniesFavoriteNumber = %s, kaisFavoriteNumber = %s", winniesFavoriteNumber, kaisFavoriteNumber);
+var n = 0
+for (var n; n <= winniesFavoriteNumber && n <= kaisFavoriteNumber; n++){
+    if (n == winniesFavoriteNumber || n == kaisFavoriteNumber) {
+            console.log("Favorite Number = %s", n);
+}
+}
+>>>>>>> 54ec69819f770c84a62b2805a188357f6bfaa2cb
 
 for (var n = 0; n <= winniesFavoriteNumber || n <= kaisFavoriteNumber; n++) {
     console.log(n);
