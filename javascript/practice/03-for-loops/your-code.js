@@ -22,7 +22,9 @@ for (var n = 1; n <= 7; n++) {
 console.log("FOR ONE TO TEN");
 // Write your code here:
 
-
+for (var n = 1; n <= 10; n++) {
+    console.log(n);
+}
 
 // 2. COUNT BY TWOS FROM TWO TO TWELVE
 // ===================================
@@ -40,9 +42,12 @@ console.log("FOR ONE TO TEN");
 console.log("COUNT BY TWOS FROM TWO TO TWELVE");
 // Write your code here:
 
+<<<<<<< HEAD
+=======
 for (var n = 2; n <= 12; n = n + 2) {
     console.log(n);
 }
+>>>>>>> 54ec69819f770c84a62b2805a188357f6bfaa2cb
 
 // 3. COUNT BACKWARD FROM SIX
 // ==========================
@@ -61,7 +66,11 @@ for (var n = 2; n <= 12; n = n + 2) {
 console.log("COUNT BACKWARD FROM SIX");
 // Write your code here:
 
+<<<<<<< HEAD
+for (var n = 6; n >= 0; n--) {
+=======
 for (var n = 6; n >= 0; n = n - 1) {
+>>>>>>> 54ec69819f770c84a62b2805a188357f6bfaa2cb
     console.log(n);
 }
 
@@ -82,9 +91,16 @@ for (var n = 6; n >= 0; n = n - 1) {
 console.log("SUM EVENS");
 // Write your code here:
 
+<<<<<<< HEAD
+var limit = 11
+for (var sum = 0; sum <= limit; sum++) {
+    console.log(sum);
+}
+=======
 var n = 0;
 var sum = 0; 
 var limit = 10;
+>>>>>>> 54ec69819f770c84a62b2805a188357f6bfaa2cb
 
 console.log("limit = %s, sum = %s", limit, sum);
 
@@ -113,6 +129,10 @@ var kaisFavoriteNumber = 44;    // Kai's favorite number
 console.log("FIND A FAVORITE NUMBER");
 // Write your code here:
 
+<<<<<<< HEAD
+var winniesFavoriteNumber = 53
+var kaisFavoriteNumber = 62
+=======
 console.log("winniesFavoriteNumber = %s, kaisFavoriteNumber = %s", winniesFavoriteNumber, kaisFavoriteNumber);
 var n = 0
 for (var n; n <= winniesFavoriteNumber && n <= kaisFavoriteNumber; n++){
@@ -120,7 +140,11 @@ for (var n; n <= winniesFavoriteNumber && n <= kaisFavoriteNumber; n++){
             console.log("Favorite Number = %s", n);
 }
 }
+>>>>>>> 54ec69819f770c84a62b2805a188357f6bfaa2cb
 
+for (var n = 0; n <= winniesFavoriteNumber || n <= kaisFavoriteNumber; n++) {
+    console.log(n);
+}
 
 // CHALLENGE: WHILE LOOPS
 // ======================
