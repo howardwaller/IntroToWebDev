@@ -49,16 +49,33 @@ console.log("[-1] -> expected: -1, actual: %s", actual);
 // The function should NOT alter either parameter.
 // Write your code here:
 
+// var i = 0;
+// var n = 0;
+// var m = 0;
+// var array1 = [];
+// var array2 = [];
 
+function combine(array1, array2) {
+var m = array1.length;
+var n = array1.length + array2.length;
+var array3 = [];
+
+for (var i = 0; i <= m; i++); {
+	array3.push(array1[i]);
+}	
+for (var i = m; i <= n; i++); {
+	array3.push(array2[i]);
+}	
+}
 
 // Uncomment the code below to verify your function is working.
-// console.log("combine =====");
-// var merged = combine(["Oak", "Maple", "Birch"], ["Hydrogen", "Helium"]);
-// console.log("expected: Oak,Maple,Birch,Hydrogen,Helium\nactual: %s", merged);
-// merged = combine([12.5, 3, 855], [true, false, true]);
-// console.log("expected: 12.5,3,855,true,false,true\nactual: %s", merged);
-// merged = combine(["Saturn"], ["Black Lab", "Borzoi", "Pug"]);
-// console.log("expected: Saturn,Black Lab,Borzoi,Pug\nactual: %s", merged);
+console.log("combine =====");
+var merged = combine(["Oak", "Maple", "Birch"], ["Hydrogen", "Helium"]);
+console.log("expected: Oak,Maple,Birch,Hydrogen,Helium\nactual: %s", merged);
+merged = combine([12.5, 3, 855], [true, false, true]);
+console.log("expected: 12.5,3,855,true,false,true\nactual: %s", merged);
+merged = combine(["Saturn"], ["Black Lab", "Borzoi", "Pug"]);
+console.log("expected: Saturn,Black Lab,Borzoi,Pug\nactual: %s", merged);
 
 
 // 3. CHALLENGE: SUBTRACT AN ARRAY
