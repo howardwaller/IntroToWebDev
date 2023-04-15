@@ -5,6 +5,13 @@ var num2 = document.getElementById("num2");
 var results = document.getElementById("results");
 var submitButton = document.getElementById("submitButton");
 
+function resetView() {
+    numberFun.className = "needs-validation";
+    results.style.display = "none";
+    submitButton.innerText = "Calculate";
+    num1.focus();
+}
+
 function validate() {
 
     numberFun.className = "needs-validation";
@@ -28,11 +35,4 @@ function validate() {
     // We always return false so that the form doesn't submit.
     // Submission causes the page to reload.
     return false;
-}
-
-function resetView() {
-    numberFun.className = "needs-validation";
-    results.style.display = "none";
-    submitButton.innerText = "Calculate";
-    num1.focus();
 }
