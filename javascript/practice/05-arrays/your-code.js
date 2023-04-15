@@ -54,16 +54,15 @@ console.log("[-1] -> expected: -1, actual: %s", actual);
 // var m = 0;
 // var array1 = [];
 // var array2 = [];
+//var m = array1.length;
+//var n = array1.length + array2.length;
 
 function combine(array1, array2) {
-var m = array1.length;
-var n = array1.length + array2.length;
 var array3 = [];
-
-for (var i = 0; i <= m; i++); {
+for (var i = 0; i <= array1.length; i++); {
 	array3.push(array1[i]);
 }	
-for (var i = m; i <= n; i++); {
+for (var i = 0; i <= array2.length; i++); {
 	array3.push(array2[i]);
 }	
 }
