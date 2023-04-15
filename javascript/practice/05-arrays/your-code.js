@@ -87,16 +87,31 @@ console.log("expected: Saturn,Black Lab,Borzoi,Pug\nactual: %s", merged);
 // The function should NOT alter either parameter.
 // Write your code here:
 
+//var i = 0
+//var array1 = [];
+//var array2 = [];
 
+function subtractArray(array1, array2) {
+var array3 = [];
+for (var i = 0; i < array1.length; i++) {
+//	if array1[i] != array2[i]
+	array3.push(array1[i]);
+//	else
+}	
+//for (var i = 0; i <= array2.length; i++) {
+//	array3.push(array2[i]);
+}	
+{return array3}
+}
 
 // Uncomment the code below to verify your function is working.
-// console.log("subtractArray =====");
-// var result = subtractArray([1, 2, 3, 4, 5], [2, 4, 6]);
-// console.log("expected: 1,3,5\nactual: %s", result);
-// result = subtractArray(["Neptune", "Uranus", "Saturn", "Pluto"], ["Pluto"]);
-// console.log("expected: Neptune,Uranus,Saturn\nactual: %s", result);
-// result = subtractArray([1, 2, 3, 1, 2, 3, 1, 2, 3], [1, 3]);
-// console.log("expected: 2,2,2\nactual: %s", result);
+console.log("subtractArray =====");
+var result = subtractArray([1, 2, 3, 4, 5], [2, 4, 6]);
+console.log("expected: 1,3,5\nactual: %s", result);
+result = subtractArray(["Neptune", "Uranus", "Saturn", "Pluto"], ["Pluto"]);
+console.log("expected: Neptune,Uranus,Saturn\nactual: %s", result);
+result = subtractArray([1, 2, 3, 1, 2, 3, 1, 2, 3], [1, 3]);
+console.log("expected: 2,2,2\nactual: %s", result);
 
 
 
