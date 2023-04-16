@@ -23,7 +23,7 @@ function toggle() {
         mouseY.innerText = "Untracked";
     } else {
         this.classList.remove("btn-success");
-		this.classList.remove("btn-success");
+		this.classList.add("btn-danger");
         this.innerText = "Stop mouse tracking.";
     }
 
@@ -50,3 +50,4 @@ document.getElementById("btnToggle").addEventListener("click", toggle);
 document.getElementById("btnToggle1").addEventListener("click", toggle);
 document.addEventListener("mousemove", updateMousePosition);
 
+//window.addEventListener("click", toggle);

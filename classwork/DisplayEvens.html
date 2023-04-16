@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+div {
+   width: 50%;
+}
+</style>
+<head>
+    <title>Sample. Add evens</title>
+    <link rel="stylesheet" 
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1>Sample</h1>
+<form  name="numberFun" class="needs-validation" onsubmit="return validate();" 
+    onreset="resetView();" novalidate>
+    <div class="form-group col">
+        <div class="form-row">
+            <label for="num1">Starting number</label>
+            <input type="number" class="form-control" id="num1" required>
+            <div class="invalid-feedback">
+                Starting number is required and must be a number.
+            </div>
+        </div> <!-- end .form-group -->
+        <div class="form-row">
+            <label for="num2">Ending number</label>
+            <input type="number" class="form-control" id="num2" required>
+            <div class="invalid-feedback">
+                Ending number is required and must be a number.
+            </div>
+        </div> <!-- end .form-group -->
+		<div class="form-row">
+            <label for="num2">Step</label>
+            <input type="number" class="form-control" id="num3" required>
+            <div class="invalid-feedback">	
+                Step is required and must be a number.
+            </div>
+        </div> <!-- end .form-group -->
+    </div><!-- end .form-row -->
+
+    <div class="form-row">
+        <div class="form-group col">
+            <button type="submit" id="submitButton" class="btn btn-primary">
+                Display evens</button>
+            <button type="reset" class="btn btn-secondary">Reset</button>
+        </div>
+    </div> <!-- end .form-row -->
+</form>
+        <h2>Here are the even numbers between <var>num1</var> and <var>num2</var> by <var>num3</var>'s</h2>
+		
+		<script>
+			const array = array1;
+			const string = JSON.stringify(array, null, 4);
+            document.querySelector(".output").innerHTML = string;
+        </script>
+		
+		
+<!-- <label>Here: </label> <span id="array1"> </span> -->
+</div> <!-- end .container -->
+
+    <script src="DisplayEvens.js"></script>
+</body>
+</html>
