@@ -94,10 +94,10 @@ console.log("expected: Saturn,Black Lab,Borzoi,Pug\nactual: %s", merged);
 function subtractArray(array1, array2) {
 var array3 = [];
 for (var i = 0; i < array1.length; i++) {
-	if (array1[i]) != (array2[i]);
-	array3.push(array1[i]);
+	if (array1[i] != array2[i])
+	{array3.push(array1[i]);}
 }
-{return array3}
+return array3;
 }	
 
 // Uncomment the code below to verify your function is working.

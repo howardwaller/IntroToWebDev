@@ -16,15 +16,27 @@ function toggle() {
     // element.className = "btn btn-default btn-lrg"
 
     if (tracking) {
-        this.classList.remove("btn-danger");
-        this.classList.add("btn-success");
-        this.innerText = "Start mouse tracking.";
+		btnToggle.classList.remove("btn-danger");
+		btnToggle.classList.add("btn-success");
+        btnToggle.innerText = "Start mouse tracking.";
+		btnToggle1.classList.remove("btn-danger");
+		btnToggle1.classList.add("btn-success");
+        btnToggle1.innerText = "Start mouse tracking.";
+//      this.classList.remove("btn-danger");
+//      this.classList.add("btn-success");
+//      this.innerText = "Start mouse tracking.";
         mouseX.innerText = "Untracked";
         mouseY.innerText = "Untracked";
     } else {
-        this.classList.remove("btn-success");
-		this.classList.add("btn-danger");
-        this.innerText = "Stop mouse tracking.";
+//      this.classList.remove("btn-success");
+//		this.classList.add("btn-danger");
+//      this.innerText = "Stop mouse tracking.";
+        btnToggle.classList.remove("btn-success");
+		btnToggle.classList.add("btn-danger");
+        btnToggle.innerText = "Stop mouse tracking.";
+		btnToggle1.classList.remove("btn-success");
+		btnToggle1.classList.add("btn-danger");
+        btnToggle1.innerText = "Stop mouse tracking.";
     }
 
     tracking = !tracking;
