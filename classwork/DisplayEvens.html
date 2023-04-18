@@ -6,7 +6,7 @@ div {
 }
 </style>
 <head>
-    <title>Sample. Add evens</title>
+    <title>Sample. Display evens</title>
     <link rel="stylesheet" 
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
@@ -14,7 +14,7 @@ div {
 </head>
 <body>
     <div class="container">
-        <h1>Sample</h1>
+        <h1>Sample. Display evens</h1>
 <form  name="numberFun" class="needs-validation" onsubmit="return validate();" 
     onreset="resetView();" novalidate>
     <div class="form-group col">
@@ -43,20 +43,19 @@ div {
 
     <div class="form-row">
         <div class="form-group col">
-            <button type="submit" id="submitButton" class="btn btn-primary">
-                Display evens</button>
+            <button type="submit" id="submitButton" class="btn btn-primary" onclick="displayNum1()">Display evens</button>
             <button type="reset" class="btn btn-secondary">Reset</button>
         </div>
     </div> <!-- end .form-row -->
 </form>
-        <h2>Here are the even numbers between {num1} and <var>num2</var> by <var>num3</var>'s</h2>
-		
-		<script>
-			const array = array1;
-			const string = JSON.stringify(array, null, 4);
-            document.querySelector(".output").innerHTML = string;
-        </script>
-		
+        <h2>Here are the even numbers between  
+<p id="demo"></p>
+<script>
+function displayNum1() {
+  document.getElementById("demo").innerHTML = "num3";
+}
+</script>
+		and <var>num2</var> by <var>num3</var>'s</h2>
 		
 <!-- <label>Here: </label> <span id="array1"> </span> -->
 </div> <!-- end .container -->

@@ -91,14 +91,37 @@ console.log("expected: Saturn,Black Lab,Borzoi,Pug\nactual: %s", merged);
 //var array1 = [];
 //var array2 = [];
 
+//function subtractArray(array1, array2) {
+//var array3 = [];
+//for (var i = 0; i < array1.length; i++)
+//{
+//	if ((array1[i] != array2[i]))
+//	{array3.push(array1[i]);}
+//}
+//return array3;
+//}	
+
 function subtractArray(array1, array2) {
 var array3 = [];
-for (var i = 0; i < array1.length; i++) {
-	if (array1[i] != array2[i])
-	{array3.push(array1[i]);}
+for (var i = 0; i < array1.length; i++)
+//	for (var i = 0; i <= array2.length; i++)
+{
+	if ((array1[i] = array2[i]))
+	{array3.push(array1[i]);
+}
 }
 return array3;
 }	
+
+//function subtractArray(array1, array2) {
+//var array3 = [];
+//for (var i = 0; i < array1.length; i++)
+//{
+//	if ((array1[i] = (array2[i]))
+//	{array3.push(array1[i]);}
+//}
+//return array3;
+//}
 
 // Uncomment the code below to verify your function is working.
 console.log("subtractArray =====");
