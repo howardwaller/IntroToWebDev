@@ -43,23 +43,22 @@ div {
 
     <div class="form-row">
         <div class="form-group col">
-            <button type="submit" id="submitButton" class="btn btn-primary" onclick="displayNum1()">Display evens</button>
+            <button type="submit" id="submitButton" class="btn btn-primary" onclick="displayArray1()">Display evens</button>
             <button type="reset" class="btn btn-secondary">Reset</button>
         </div>
     </div> <!-- end .form-row -->
 </form>
-        <h2>Here are the even numbers between  
+        <h2>Here are the even numbers between <var>num1</var>   
+				and <var>num2</var> by <var>num3</var>'s</h2>
+
 <p id="demo"></p>
 <script>
-function displayNum1() {
-  document.getElementById("demo").innerHTML = "num3";
+function displayArray1() {
+  document.getElementById("demo").innerHTML = "num1";
 }
 </script>
-		and <var>num2</var> by <var>num3</var>'s</h2>
-		
-<!-- <label>Here: </label> <span id="array1"> </span> -->
+	
 </div> <!-- end .container -->
-
     <script src="DisplayEvens.js"></script>
 </body>
 </html>

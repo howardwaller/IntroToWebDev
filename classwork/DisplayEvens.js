@@ -43,7 +43,8 @@ var array1 = [];
 function calcEvens() {
 	for (var i = num1; i < num2; i++) {
 	if  (num1 % 2 == 0)
-	array1.push(num1)}
+	{array1.push(num1)}
 
 return (array1);
+}
 }
