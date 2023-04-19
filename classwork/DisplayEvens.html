@@ -19,22 +19,22 @@ div {
     onreset="resetView();" novalidate>
     <div class="form-group col">
         <div class="form-row">
-            <label for="num1">Starting number</label>
-            <input type="number" class="form-control" id="num1" required>
-            <div class="invalid-feedback">
+            <label for="number1">Starting number</label>
+            <input type="number" class="form-control" id="number1" required>
+			<div class="invalid-feedback">
                 Starting number is required and must be a number.
             </div>
         </div> <!-- end .form-group -->
         <div class="form-row">
-            <label for="num2">Ending number</label>
-            <input type="number" class="form-control" id="num2" required>
+            <label for="number2">Ending number</label>
+            <input type="number" class="form-control" id="number2" required>
             <div class="invalid-feedback">
                 Ending number is required and must be a number.
             </div>
         </div> <!-- end .form-group -->
 		<div class="form-row">
-            <label for="num2">Step</label>
-            <input type="number" class="form-control" id="num3" required>
+            <label for="number3">Step</label>
+           <input type="number" class="form-control" id="number3" required>
             <div class="invalid-feedback">	
                 Step is required and must be a number.
             </div>
@@ -43,20 +43,20 @@ div {
 
     <div class="form-row">
         <div class="form-group col">
-            <button type="submit" id="submitButton" class="btn btn-primary" onclick="displayArray1()">Display evens</button>
+            <button type="submit" id="submitButton" class="btn btn-primary" onclick="displayNumber()">Display evens</button>
+			<script src="numberDisplay.js"></script>
             <button type="reset" class="btn btn-secondary">Reset</button>
+			<p id="display"></p>
         </div>
     </div> <!-- end .form-row -->
 </form>
-        <h2>Here are the even numbers between <var>num1</var>   
-				and <var>num2</var> by <var>num3</var>'s</h2>
-
-<p id="demo"></p>
-<script>
+<!--      <h2>Here are the even numbers between <var>number1</var>   
+				and <var>number2</var> by <var>number3</var>'s</h2>  -->
+<!-- <script>
 function displayArray1() {
   document.getElementById("demo").innerHTML = "num1";
 }
-</script>
+</script> -->
 	
 </div> <!-- end .container -->
     <script src="DisplayEvens.js"></script>

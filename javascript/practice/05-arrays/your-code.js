@@ -91,13 +91,13 @@ function subtractArray(array1, array2) {
 var array3 = [];
 for (var i = 0; i <= array1.length; i++)
 {
-for (var j = 0; j <= array2.length; i++)
+for (var j = 0; j <= array2.length; j++)
 {
 	if ((array1[i] = array2[j]))
-	{array3.push(array1[j]);
-}}
+	{array3.push(array1[j]);}
+}
 return array3;
-}	
+}}
 
 // Uncomment the code below to verify your function is working.
 console.log("subtractArray =====");
@@ -107,10 +107,6 @@ result = subtractArray(["Neptune", "Uranus", "Saturn", "Pluto"], ["Pluto"]);
 console.log("expected: Neptune,Uranus,Saturn\nactual: %s", result);
 result = subtractArray([1, 2, 3, 1, 2, 3, 1, 2, 3], [1, 3]);
 console.log("expected: 2,2,2\nactual: %s", result);
-
-
-
-
 
 /**********************************
  * The Software Guild

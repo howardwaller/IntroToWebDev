@@ -1,8 +1,8 @@
 // These elements will be used in both functions.
 var numberFun = document.forms["numberFun"];
-var num1 = document.getElementById("num1");
-var num2 = document.getElementById("num2");
-var num3 = document.getElementById("num3");
+var number1 = document.getElementById("number1");
+var number2 = document.getElementById("number2");
+var number3 = document.getElementById("number3");
 var results = document.getElementById("results");
 var submitButton = document.getElementById("submitButton");
 
@@ -10,7 +10,7 @@ function resetView() {
     numberFun.className = "needs-validation";
     results.style.display = "none";
     submitButton.innerText = "Calculate";
-    num1.focus();
+    number1.focus();
 }
 
 function validate() {
@@ -22,9 +22,9 @@ function validate() {
         return false;
     }
 
-    var operand1 = parseInt(num1.value, 10);
-    var operand2 = parseInt(num2.value, 10);
-	var operand2 = parseInt(num3.value, 10);
+    var operand1 = parseInt(number1.value, 10);
+    var operand2 = parseInt(number2.value, 10);
+	var operand2 = parseInt(number3.value, 10);
 	
     document.getElementById("addResult").innerText = operand1 + operand2;
     document.getElementById("subtractResult").innerText = operand1 - operand2;
@@ -41,10 +41,17 @@ function validate() {
 var array1 = [];
 //var i = num1;
 function calcEvens() {
-	for (var i = num1; i < num2; i++) {
-	if  (num1 % 2 == 0)
-	{array1.push(num1)}
+	for (var i = number1; i < number2; i++) {
+	if  (number1 % 2 == 0)
+	{array1.push(number1)}
 
 return (array1);
 }
+}
+
+function displayNumber() {
+	const numberInput = document.getElementById("number1")
+	const display = document.getElementById("display")
+	const number = Number(numberInput.value);
+	display.innerText = 'Here are the even numbers between: ${number1}';
 }
