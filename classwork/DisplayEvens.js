@@ -53,5 +53,12 @@ function displayNumber() {
 	const numberInput = document.getElementById("number1")
 	const display = document.getElementById("display")
 	const number = Number(numberInput.value);
-	display.innerText = 'Here are the even numbers between: ${number1}';
+	display.innerText = `Here are the even numbers between: ${number1}`;
+}
+
+function displayEvens() {
+	const numberInput = document.getElementById("array1")
+	const display = document.getElementById("display")
+	const number = Number(numberInput.value);
+	//display.innerText = `Here are the even numbers between: ${number1}`;//
 }
