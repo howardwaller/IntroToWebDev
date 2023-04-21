@@ -94,7 +94,7 @@ for (var i = 0; i <= array1.length; i++)
 for (var j = 0; j <= array2.length; j++)
 {
 	if ((array1[i] = array2[j]))
-	{array3.push(array1[j]);}
+	{array3.push(array2[j]);}
 }
 return array3;
 }}
