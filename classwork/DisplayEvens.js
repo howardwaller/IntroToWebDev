@@ -26,13 +26,14 @@ function validate() {
     var operand2 = parseInt(number2.value, 10);
 	var operand2 = parseInt(number3.value, 10);
 	
-    document.getElementById("addResult").innerText = operand1 + operand2;
-    document.getElementById("subtractResult").innerText = operand1 - operand2;
-    document.getElementById("multiplyResult").innerText = operand1 * operand2;
-    document.getElementById("divideResult").innerText = operand1 / operand2;
+// commmented out this code not needed from a previous example
+//    document.getElementById("addResult").innerText = operand1 + operand2;
+//    document.getElementById("subtractResult").innerText = operand1 - operand2;
+//    document.getElementById("multiplyResult").innerText = operand1 * operand2;
+//    document.getElementById("divideResult").innerText = operand1 / operand2;
 
-    results.style.display = "block";
-    submitButton.innerText = "Recalculate";
+//    results.style.display = "block";
+//   submitButton.innerText = "Recalculate";
 
     // We always return false so that the form doesn't submit.
     // Submission causes the page to reload.
@@ -49,9 +50,12 @@ return (array1);
 }
 }
 
+// javascript function to display the messsage
+
 function displayNumber() {
 	const numberInput = document.getElementById("number1")
 	const display = document.getElementById("display")
 	const number = Number(numberInput.value);
-	display.innerText = `Here are the even numbers between: ${number1} and  ${number2}`;
+	display.innerText = `Here are the even numbers between: ${number1} and ${number2} by intevals of ${number3}`;
+	display.innerText = `${array1}`;
 }

@@ -10,3 +10,7 @@ $(".item").click(function(){
 $(".left").click(function(){
   $("#myCarousel").carousel("prev");
 });
+
+function clearFormfunction() {  
+   document.getElementById("contactPanda").reset();  
+ } 
