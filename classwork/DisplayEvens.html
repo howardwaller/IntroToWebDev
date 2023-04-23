@@ -5,6 +5,8 @@ div {
    width: 50%;
 }
 </style>
+<!-- tried putting the script bit at the start of the page instead of at the bottom, but it didn't make a difference -->
+<script src="DisplayEvens.js"></script>
 <head>
     <title>Sample. Display evens</title>
     <link rel="stylesheet" 
@@ -50,15 +52,25 @@ div {
         </div>
     </div> <!-- end .form-row -->
 </form>
-<!--      <h2>Here are the even numbers between <var>number1</var>   
-				and <var>number2</var> by <var>number3</var>'s</h2>  -->
-<!-- <script>
+	
+</div> <!-- end .container -->
+
+</body>
+</html>
+
+<!-- trying a script to display an array or a number
+<script>
 function displayArray1() {
   document.getElementById("demo").innerHTML = "num1";
 }
 </script> -->
-	
-</div> <!-- end .container -->
-    <script src="DisplayEvens.js"></script>
-</body>
-</html>
+
+<!-- script I tried in the html itself
+<script type="text/javascript">
+function displayNumber() {
+	const numberInput = document.getElementById("number1")
+	const display = document.getElementById("display")
+	const number = Number(numberInput.value);
+	display.innerText = `Here are the even numbers between: ${number1} and ${number2} by ${number2}`;
+}
+</script> -->

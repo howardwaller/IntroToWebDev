@@ -57,6 +57,7 @@ console.log("[-1] -> expected: -1, actual: %s", actual);
 //var m = array1.length;
 //var n = array1.length + array2.length;
 
+// attempt
 function combine(array1, array2) {
 var array3 = [];
 for (var i = 0; i < array1.length; i++) {
@@ -87,17 +88,45 @@ console.log("expected: Saturn,Black Lab,Borzoi,Pug\nactual: %s", merged);
 // The function should NOT alter either parameter.
 // Write your code here:
 
+// Attempt 1. Numbers from the wrong array displayed
+//function subtractArray(array1, array2) {
+//var array3 = [];
+//for (var i = 0; i <= array1.length; i++)
+//{
+//for (var j = 0; j <= array2.length; j++)
+//{
+//	if ((array1[i] = array2[j]))
+//	{array3.push(array2[j]);}
+//}
+//return array3;
+//}}
+
+// Attempt 2. Too many numbers
+//function subtractArray(array1, array2) {
+//var array3 = [];
+//for (var i = 0; i <= array2.length; i++)
+//{
+//for (var j = 0; j <= array1.length; j++)
+//{
+//	if ((array2[i] = array1[j]))
+//	{array3.push(array1[j]);}
+//}
+//return array3;
+//}}
+
+// Attempt 3.
 function subtractArray(array1, array2) {
 var array3 = [];
 for (var i = 0; i <= array1.length; i++)
 {
 for (var j = 0; j <= array2.length; j++)
 {
-	if ((array1[i] = array2[j]))
-	{array3.push(array2[j]);}
+	if ((array1[i] != array2[j]))
+	{array3.push(array1[i]);}
 }
 return array3;
 }}
+
 
 // Uncomment the code below to verify your function is working.
 console.log("subtractArray =====");

@@ -2,7 +2,7 @@
 <!--
 Name: Howard Waller
 Date created: 17-Feb-23
-Most recent revision: 21-Apr-23
+Most recent revision: 23-Apr-23
 -->
 <html lang="en">
 <head>
@@ -39,6 +39,7 @@ Most recent revision: 21-Apr-23
 <body>
 <div class="container"><div class="row">
 <div class="col-lg-3 col-md-4">
+<!-- navigation section -->
 <nav> 
 	<hr>
 	<table border="0">
@@ -56,7 +57,7 @@ home
 </nav>
 </div></div>
 </div>
-
+<!-- Carousel section (but I can't get this to display as an active carousel using bootstrap or a local css style) -->
 <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -68,20 +69,26 @@ home
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <img src="https://images.pexels.com/photos/13379798/pexels-photo-13379798.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="300">
+      <!-- old link to stock image -->
+	  <!-- <img src="https://images.pexels.com/photos/13379798/pexels-photo-13379798.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="300"> -->
+	   <img src="images/Carousel1.jpg" width="300">
 			<div class="carousel-caption d-none d-md-block">
              <h5>We're opening a new location!</h5>
             </div>
     </div>
     <div class="item">
-		 <img src="https://images.pexels.com/photos/10897714/pexels-photo-10897714.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="300">
+		<!-- old link to stock image -->
+		<!-- <img src="https://images.pexels.com/photos/10897714/pexels-photo-10897714.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="300"> -->
+		 <img src="images/Carousel2.jpg" width="300">
 		 	<div class="carousel-caption d-none d-md-block">
              <h5>We're rolling out our seasonal menu,</h5>
 			 <p>with special options for this season.</p>
             </div>
        </div>
     <div class="item">
-	 <img src="https://images.pexels.com/photos/109275/pexels-photo-109275.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="300">
+	<!-- old link to stock image -->
+	<!-- <img src="https://images.pexels.com/photos/109275/pexels-photo-109275.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="300"> -->
+	 <img src="images/Carousel3.jpg" width="300">
 	 		<div class="carousel-caption d-none d-md-block">
              <h5>The Drink of the Month is TSG Special Brew.</h5>
             </div>
@@ -98,61 +105,82 @@ home
     <span class="sr-only">Next</span>
   </a>
 </div>
-
+<hr>
 <section>
+<!-- Manu items, scaleable with bootstrap -->
 <div class="container">
 <center>
 <h2>Menu</h2>
 
-<table border="0" width="90%">
-    <tr> 
-        <td><strong><center>Item 1</center></strong></td> 
-        <td><strong><center>Item 2</center></strong></td> 
-        <td><strong><center>Item 3</center></strong></td> 
-    </tr> 
-    <tr>
-        <td><center>In hac habitasse platea dictumst. Cras sapien ligula, consequat eget pellentesque id, consequat in enim. Nam imperdiet ullamcorper odio a mollis. Vestibulum quis facilisis ipsum, at consequat nisl.<br>
-		£1.00</center></td> 
-        <td><center>In hac habitasse platea dictumst. Cras sapien ligula, consequat eget pellentesque id, consequat in enim. Nam imperdiet ullamcorper odio a mollis. Vestibulum quis facilisis ipsum, at consequat nisl.<br>
-		£2.00</center></td> 
-        <td><center>In hac habitasse platea dictumst. Cras sapien ligula, consequat eget pellentesque id, consequat in enim. Nam imperdiet ullamcorper odio a mollis. Vestibulum quis facilisis ipsum, at consequat nisl.<br>
-		£3.00</center></td>
-</center>
-    </tr> 
-    <tr> 
-        <td><strong><center>Item 4</center></strong></td> 
-        <td><strong><center>Item 5</center></strong></td> 
-        <td><strong><center>Item 6</center></strong></td> 
-    </tr>
-	  <tr> 
-        <td><center>In hac habitasse platea dictumst. Cras sapien ligula, consequat eget pellentesque id, consequat in enim. Nam imperdiet ullamcorper odio a mollis. Vestibulum quis facilisis ipsum, at consequat nisl.<br>
-		£4.00</center></td> 
-        <td><center>In hac habitasse platea dictumst. Cras sapien ligula, consequat eget pellentesque id, consequat in enim. Nam imperdiet ullamcorper odio a mollis. Vestibulum quis facilisis ipsum, at consequat nisl.<br>
-		£5.00</center></td> 
-        <td><center>In hac habitasse platea dictumst. Cras sapien ligula, consequat eget pellentesque id, consequat in enim. Nam imperdiet ullamcorper odio a mollis. Vestibulum quis facilisis ipsum, at consequat nisl.<br>
-		£6.00</center></td> 
-    </tr>
-</table>
+			<div class="row">
+				<div class="col-lg-3 col-md">
+				<strong>Item 1</strong>
+				<br>
+				In hac habitasse platea dictumst. Cras sapien ligula, consequat eget pellentesque id, consequat in enim. Nam imperdiet ullamcorper odio a mollis. Vestibulum quis facilisis ipsum, at consequat nisl.
+				<br>
+				<strong>£1.00</strong>
+				</div>
+				<div class="col-lg-3 col-md">
+				<strong>Item 2</strong>
+				<br>
+				In hac habitasse platea dictumst. Cras sapien ligula, consequat eget pellentesque id, consequat in enim. Nam imperdiet ullamcorper odio a mollis. Vestibulum quis facilisis ipsum, at consequat nisl.
+				<br>
+				<strong>£2.00</strong>
+				</div>
+				<div class="col-lg-3 col-md">
+				<strong>Item 3</strong>
+				<br>
+				In hac habitasse platea dictumst. Cras sapien ligula, consequat eget pellentesque id, consequat in enim. Nam imperdiet ullamcorper odio a mollis. Vestibulum quis facilisis ipsum, at consequat nisl.
+				<br>
+				<strong>£3.00</strong>
+				</div>
+				</div>
+				<hr>
+			<div class="row">
+				<div class="col-lg-3 col-md">
+				<strong>Item 4</strong>
+				<br>
+				In hac habitasse platea dictumst. Cras sapien ligula, consequat eget pellentesque id, consequat in enim. Nam imperdiet ullamcorper odio a mollis. Vestibulum quis facilisis ipsum, at consequat nisl.
+				<br>
+				<strong>£4.00</strong>
+				</div>
+				<div class="col-lg-3 col-md">
+				<strong>Item 5</strong>
+				<br>
+				In hac habitasse platea dictumst. Cras sapien ligula, consequat eget pellentesque id, consequat in enim. Nam imperdiet ullamcorper odio a mollis. Vestibulum quis facilisis ipsum, at consequat nisl.
+				<br>
+				<strong>£5.00</strong>
+				</div>
+				<div class="col-lg-3 col-md">
+				<strong>Item 6</strong>
+				<br>
+				In hac habitasse platea dictumst. Cras sapien ligula, consequat eget pellentesque id, consequat in enim. Nam imperdiet ullamcorper odio a mollis. Vestibulum quis facilisis ipsum, at consequat nisl.
+				<br>
+				<strong>£6.00</strong>
+				</div>
+				</div>
+				</div>
 </div>
-
+<hr>
+<!-- plain table for drinks menu -->
 <h2>Drinks menu</h2>
-<table border="1" width="40%">
+<table border="2" width="40%">
 <tbody>
     <tr> 
         <td><center>Root beer</center></td> 
-        <td><center>$3.00</center></td> 
+        <td><center>£3.00</center></td> 
       </tr> 
     <tr>
        <td><center>Bottled water</center></td> 
-       <td><center>$1.25</center></td>
+       <td><center>£1.25</center></td>
 	</tr>
 	    <tr>
        <td><center>Lemonade</center></td> 
-       <td><center>$1.00</center></td>
+       <td><center>£1.00</center></td>
 	</tr>
 	<tr>
        <td><center>Ice tea</center></td> 
-       <td><center>$1.25</center></td>
+       <td><center>£1.25</center></td>
 	</tr>
 </tbody>
 </table>
